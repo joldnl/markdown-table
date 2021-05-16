@@ -77,6 +77,7 @@ class Builder implements Renderable
 
         $table = $this->renderHeaders($widths);
         $table .= $this->renderRows($widths);
+        $table .= $this->renderAlignments($widths);
 
         return $table;
     }
@@ -88,7 +89,7 @@ class Builder implements Renderable
             $result .= $this->renderCell($this->headers[$i], $this->columnAlign($i), $widths[$i]) . ' | ';
         }
 
-        $result = rtrim($result, ' ') . PHP_EOL . $this->renderAlignments($widths) . PHP_EOL;
+        $result = $this->renderAlignments($widths) . PHP_EOL . rtrim($result, ' ') . PHP_EOL . $this->renderAlignments($widths) . PHP_EOL;
 
         return $result;
     }
