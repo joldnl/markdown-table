@@ -1,5 +1,5 @@
 {
-    "name": "maddhatter/markdown-table",
+    "name": "joldnl/markdown-table",
     "description": "Dynamically generate markdown tables",
     "type": "library",
     "license": "MIT",
@@ -7,6 +7,10 @@
         {
             "name": "Shawn Tunney",
             "email": "shawn.tunney@gmail.com"
+        },
+        {
+            "name": "Jurgen Oldenburg",
+            "email": "info@jold.nl"
         }
     ],
     "require": {
@@ -18,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MaddHatter\\MarkdownTable\\": "src/"
+            "Joldnl\\MarkdownTable\\": "src/"
         }
     }
 }
