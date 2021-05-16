@@ -1,4 +1,4 @@
-<?php namespace MaddHatter\MarkdownTable;
+<?php namespace Joldnl\MarkdownTable;
 
 use Illuminate\Contracts\Support\Renderable;
 
